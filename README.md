@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# typescript-sdk-starter
-=======
 # TypeScript SDK Starter
 
 A modern, lightweight TypeScript SDK starter template with all the best practices.
@@ -59,4 +56,3 @@ console.log(sdk.getApiKey());
 ## License
 
 MIT
->>>>>>> e563e31 (Initial commit)
