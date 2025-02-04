@@ -1,0 +1,36 @@
+<PROJECT_OVERVIEW>
+This is a modern TypeScript SDK package. It includes essential configurations and scripts for building, testing, and maintaining the codebase. The project uses tsup for bundling, Vitest for testing, and supports both ESM and CommonJS module systems.
+</PROJECT_OVERVIEW>
+
+<CODE_STYLE>
+- Follow TypeScript's strict typing guidelines to ensure type safety.
+- Use ESLint with the TypeScript ESLint plugin to maintain code quality and consistency.
+- Adhere to Prettier formatting rules for consistent code style across the project.
+- Write clear and descriptive comments for complex logic and public APIs.
+- Export all public types and document them with JSDoc comments.
+- Keep the SDK interface simple and intuitive for end users.
+</CODE_STYLE>
+
+<PROJECT_STRUCTURE>
+- /src: Contains the core SDK implementation.
+- /tests: Houses test files that mirror the src directory structure. Create tests for all public APIs.
+- /examples: Contains example usage of the SDK. Update examples when adding new features.
+- /dist: Build output directory (auto-generated, not committed).
+</PROJECT_STRUCTURE>
+
+<DEVELOPMENT_GUIDELINES>
+- Always write tests for new functionality in the /tests directory.
+- Add example usage in the /examples directory for new features.
+- Use semantic versioning for releases.
+- Keep dependencies minimal to reduce bundle size.
+- Ensure both ESM and CommonJS builds work correctly.
+- Run the full test suite before committing changes.
+</DEVELOPMENT_GUIDELINES>
+
+<AVAILABLE_PACKAGES>
+- @types/node: Provides TypeScript definitions for Node.js, allowing for type checking and IntelliSense when working with Node.js APIs.
+- typescript: The TypeScript language itself, enabling static typing and modern JavaScript features.
+- vitest: A testing framework that allows for fast and efficient unit testing of TypeScript code, providing a simple API for writing tests.
+- tsup: Zero-config bundler for TypeScript libraries, handling both ESM and CommonJS output.
+- eslint & prettier: Code quality and formatting tools configured for TypeScript.
+</AVAILABLE_PACKAGES>

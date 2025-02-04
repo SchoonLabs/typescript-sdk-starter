@@ -52,6 +52,7 @@ console.log(sdk.getApiKey());
 - `pnpm typecheck` - Check types
 - `pnpm lint` - Lint code
 - `pnpm lint:fix` - Fix lint issues
+- `pnpm format` - Format code
 
 ## License
 
