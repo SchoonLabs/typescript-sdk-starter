@@ -1,0 +1,16 @@
+# Development
+src/
+tests/
+examples/
+coverage/
+.github/
+
+# Config
+*.config.ts
+*.config.js
+tsconfig.json
+.prettierrc.json
+
+# Misc
+*.log
+.DS_Store

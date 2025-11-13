@@ -16,11 +16,26 @@
   "files": [
     "dist"
   ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schoonlabs/typescript-sdk-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/schoonlabs/typescript-sdk-starter/issues"
+  },
+  "homepage": "https://github.com/schoonlabs/typescript-sdk-starter#readme",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
   "scripts": {
     "build": "tsup",
+    "postbuild": "node -e \"const fs = require('fs'); const files = ['dist/index.js', 'dist/index.cjs', 'dist/index.d.ts']; files.forEach(f => { if (!fs.existsSync(f)) throw new Error('Missing: ' + f); }); console.log('✓ Build verification passed');\"",
     "dev": "tsup --watch",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -45,7 +60,12 @@
     "typescript",
     "sdk",
     "starter",
-    "template"
+    "template",
+    "boilerplate",
+    "library",
+    "esm",
+    "cjs",
+    "dual-package"
   ],
   "author": "Dan Schoonmaker <dan@schoonlabs.com>",
   "license": "MIT"

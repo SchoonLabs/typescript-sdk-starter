@@ -17,6 +17,30 @@ export default [
         ecmaVersion: 'latest',
         sourceType: 'module',
       },
+      globals: {
+        // Node.js globals
+        console: 'readonly',
+        process: 'readonly',
+        Buffer: 'readonly',
+        __dirname: 'readonly',
+        __filename: 'readonly',
+        global: 'readonly',
+        module: 'readonly',
+        require: 'readonly',
+        setTimeout: 'readonly',
+        clearTimeout: 'readonly',
+        setInterval: 'readonly',
+        clearInterval: 'readonly',
+        // Browser/Web APIs
+        fetch: 'readonly',
+        Headers: 'readonly',
+        Request: 'readonly',
+        Response: 'readonly',
+        AbortController: 'readonly',
+        AbortSignal: 'readonly',
+        // TypeScript types
+        RequestInit: 'readonly',
+      },
     },
     plugins: {
       '@typescript-eslint': tseslint,
@@ -26,6 +50,7 @@ export default [
       ...tseslint.configs.recommended.rules,
       ...eslintConfigPrettier.rules,
       'prettier/prettier': 'error',
+      'no-undef': 'off', // TypeScript handles this better
     },
   },
 ];
